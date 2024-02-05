@@ -1,0 +1,22 @@
+<h3>Agregar Personaje</h3>
+<form action="" class="row" (ngSubmit)="emitCharacter()">
+  <input
+    class="form-control mb-2"
+    type="text"
+    placeholder="Nombre del Personaje"
+    [(ngModel)]="character.name"
+    name="name"
+  />
+  <!-- [(ngModel)]="character.name name="name" lo que hace esto es que el cambio que se tenga en el input se hara tambien en el atributo de ts, tienen que estar definidos con un formulario -->
+  <input
+    class="form-control mb-2"
+    type="numer"
+    placeholder="Poder del Personaje"
+    [(ngModel)]="character.power"
+    name="power"
+  />
+  <!-- [(ngModel)]="character.power name="power" lo que hace esto es que el cambio que se tenga en el input se hara tambien en el atributo de ts -->
+  <button type="submit" class="btn btn-primary">Agregar</button>
+
+  <!-- {{ character | json }} -->
+</form>
